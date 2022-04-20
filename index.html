@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <title>Complaint App</title>
+  </head>
+  <body>
+    <div class="button"></div>
+    <aside class="active">
+      <nav>
+        <i class="bi bi-list-task"></i>
+        <span>COMPLI8</span>
+      </nav>
+      <div class="completed_task">
+        <div class="after">90%</div>
+        <svg >
+          <circle cx="125" cy="55" r="50" />
+          <circle cx="125" cy="55" r="50" class="circle" />
+        </svg>
+      </div>
+      <div class="menu">
+        <div class="complain active">
+          <i class="bi bi-journal-plus"></i>
+          <span>Complain</span>
+        </div>
+        <div class="list">
+          <i class="bi bi-card-list"></i>
+          <span>List complaints</span>
+        </div>
+      </div>
+    </aside>
+    <div class="modal">Please select category</div>
+    <main>
+      <div class="complaint_area active">
+        <h3>File complain here</h3>
+        <p>Select category of complaint</p>
+        <div class="cate">
+          <div>
+            <input
+              name="comp"
+              class="comp"
+              type="radio"
+              id="aca"
+              value="aca_slides"
+            />
+            <label for="aca">Slides Issue</label>
+          </div>
+          <div>
+            <input
+              name="comp"
+              class="comp"
+              type="radio"
+              id="ass"
+              value="assignment"
+            />
+            <label for="ass">Assignment Issue</label>
+          </div>
+
+          <div>
+            <input
+              name="comp"
+              class="comp"
+              type="radio"
+              id="dead"
+              value="deadline"
+            />
+            <label for="dead">Deadline Issue</label>
+          </div>
+        </div>
+        <div class="option">
+          <p>Didn't see your category? You can specify here.</p>
+          <input
+            type="text"
+            class="type"
+            placeholder="Type category of complaint"
+          />
+        </div>
+        <div class="make_complaint">
+          <h3>Make complaint below.</h3>
+          <textarea class="text" placeholder="Type complaint"></textarea>
+          <h4>Do you have an image to back it up ? If yes upload here.</h4>
+          <div class="input">
+            <img class="preview" />
+            <p class="img">No image uploaded</p>
+            <input
+              class="image"
+              type="file"
+              accept=".png, .jpeg, .jpg"
+              id="file"
+              style="display: none"
+            /><label for="file">Upload file</label>
+          </div>
+        </div>
+        <button class="submit">Submit</button>
+      </div>
+      <div class="list_complaint_area">
+      </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
