@@ -358,4 +358,7 @@ li.disabled {
     padding: 1em;
     font-size: 2rem;
   }
+  .input{
+    align-self: center;
+  }
 }
