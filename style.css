@@ -60,7 +60,7 @@ circle:nth-of-type(2) {
   content: var(--percentage);
   font-size: 1rem;
   position: absolute;
-  left: 47%;
+  left: 39%;
   transform: translate(-30%, -130%);
   top: 52%;
   width: 5em;
